@@ -9,4 +9,5 @@ tar -xvf root.tar.xz
 ./dist/proot -S . /bin/bash
 echo "===================================="
 echo "Keep supporting akuh.net, thank you"
+echo "You Got Root access now"
 echo "===================================="
