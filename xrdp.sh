@@ -1,9 +1,10 @@
 echo "Download ngrok"
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-unzip ngrok-stable-linux-amd64.zip
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 read -p "Ctrl + V Authtoken: " CRP 
-./ngrok authtoken $CRP
-./ngrok tcp 3389 &>/dev/null &
+./ngrok authtoken $CRP 
+nohup ./ngrok tcp 3389 &>/dev/null &
+echo Downloading File From akuh.net
 sudo apt install -y xfce4 xfce4-goodies
 sudo apt-get install -y xrdp
 echo xfce4-session >~/.xsession
