@@ -5,7 +5,7 @@ read -p "Ctrl + V Authtoken: " CRP
 ./ngrok authtoken $CRP 
 nohup ./ngrok tcp 3389 &>/dev/null &
 echo Downloading File From akuh.net
-sudo apt install -y lubuntu–desktop
+sudo apt-get install lxde -y
 sudo apt-get install -y xrdp
 echo xfce4-session >~/.xsession
 sudo service xrdp start
