@@ -5,7 +5,6 @@ read -p "Ctrl + V Authtoken: " CRP
 ./ngrok authtoken $CRP
 ./ngrok tcp 3389 &>/dev/null &
 sudo apt install -y xfce4 xfce4-goodies
-sudo apt-get install -y firefox
 sudo apt-get install -y xrdp
 echo xfce4-session >~/.xsession
 sudo service xrdp start
