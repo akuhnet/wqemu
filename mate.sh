@@ -7,6 +7,7 @@ nohup ./ngrok tcp 3389 &>/dev/null &
 echo Downloading File From akuh.net
 sudo apt update && apt upgrade -y
 sudo apt install firefox -y
+sudo apt-get install -y xrdp
 sudo apt-get install mate-core mate-desktop-environment mate-notification-daemon -y
 sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /etc/xrdp/startwm.sh
 sudo service xrdp start
