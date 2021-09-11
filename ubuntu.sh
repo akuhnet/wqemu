@@ -6,8 +6,9 @@ read -p "Ctrl + V Authtoken: " CRP
 nohup ./ngrok tcp 3389 &>/dev/null &
 echo Downloading File From akuh.net
 sudo apt update && apt upgrade -y
-sudo apt install ubuntu-desktop -y
-sudo apt install xubuntu-desktop -y
+sudo apt-get install gnome-session-flashback -y 
+echo "gnome-session --session=gnome-flashback-metacity --disable-acceleration-check & gnome-panel"
+>~/.xsession
 sudo apt-get install -y xrdp
 echo gnome-session >~/.xsession
 sudo service xrdp start
