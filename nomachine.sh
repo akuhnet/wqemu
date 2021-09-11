@@ -5,8 +5,8 @@ read -p "Ctrl + V Authtoken: " CRP
 ./ngrok authtoken $CRP 
 nohup ./ngrok tcp 4000 &>/dev/null &
 echo Downloading File From akuh.net
-apt update && apt upgrade -y
-apt install ubuntu-desktop -y
+sudo apt update && apt upgrade -y
+sudo apt install ubuntu-desktop -y
 wget -O nomachine.deb https://bit.ly/nomachinev7
 sudo apt install ./nomachine.deb
 echo VPS Address:
