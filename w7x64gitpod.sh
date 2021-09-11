@@ -8,7 +8,7 @@ read -p "Ctrl + V Authtoken: " CRP
 ./ngrok authtoken $CRP 
 nohup ./ngrok tcp 3388 &>/dev/null &
 echo Downloading File From akuh.net
-apt-get install qemu-system-x86
+apt-get install qemu-system-x86 -y
 echo "Wait"
 echo "Starting Windows"
 echo RDP Address:
