@@ -11,8 +11,6 @@ sudo apt install xubuntu-desktop -y
 sudo apt-get install -y xrdp
 echo gnome-session >~/.xsession
 sudo service xrdp start
-apt-get install -y tightvncserver
-tightvncserver :1
 echo XRDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 echo "===================================="
