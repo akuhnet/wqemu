@@ -7,8 +7,9 @@ nohup ./ngrok tcp 3389 &>/dev/null &
 echo Downloading File From akuh.net
 sudo apt update && apt upgrade -y
 sudo apt install ubuntu-desktop -y
+sudo apt install xubuntu-desktop -y
 sudo apt-get install -y xrdp
-echo xfce4-session >~/.xsession
+echo gnome-session >~/.xsession
 sudo service xrdp start
 apt-get install -y tightvncserver
 tightvncserver :1
