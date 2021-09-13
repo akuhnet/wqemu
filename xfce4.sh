@@ -10,6 +10,7 @@ sudo apt update && apt upgrade -y
 sudo apt install firefox -y
 sudo apt install -y xrdp
 sudo apt install xfce4 -y
+sudo apt-get install -y xfce4-terminal
 sudo sed -i.bak '/fi/a xfce4-session \n' /etc/xrdp/startwm.sh
 sudo service xrdp start
 clear
@@ -18,3 +19,4 @@ curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*publ
 echo "===================================="
 echo "More  Free VPS akuh.net"
 echo "===================================="
+sleep 43200
