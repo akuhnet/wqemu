@@ -3,11 +3,8 @@ echo "Free VPS Windows 10 x64"
 echo "Please support akuh.net thank you"
 echo "Please support akuh.net thank you"
 echo "===================================="
-echo "Download windows files"
-wget -O w10x64.img https://bit.ly/akuhnetW10x64
 echo "===================================="
 echo "===================================="
-echo "Wait 1 minute"
 echo "===================================="
 echo "===================================="
 apt-get install qemu > /dev/null 2>&1
