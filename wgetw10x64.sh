@@ -23,18 +23,18 @@ wget -O w10x64.img https://bit.ly/akuhnetW10x64
 clear
 echo "===================================="
 echo "===================================="
-echo "update VPS please wait"
-echo "===================================="
-apt-get update
-apt-get upgrade
-clear
-echo "===================================="
 echo "You Got Root access now"
 echo "akuh.net"
 echo "===================================="
 echo "===================================="
 ./dist/proot -S . /bin/bash
 echo "===================================="
+echo "===================================="
+echo "update VPS please wait"
+echo "===================================="
+apt-get update
+apt-get upgrade
+clear
 echo "Installing Windows"
 echo "===================================="
 apt-get install qemu > /dev/null 2>&1
