@@ -7,7 +7,7 @@ echo "===================================="
 echo "Downloading files akuh.net"
 echo "Get windows 10x64"
 echo "===================================="
-wget -O w10x64.img https://bit.ly/akuhnetW10x64 > /dev/null 2>&1
+wget -O w10x64.img https://bit.ly/akuhnetW10x64
 echo "===================================="
 echo "Downloading files akuh.net"
 echo "Finishing Download"
