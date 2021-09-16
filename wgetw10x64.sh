@@ -2,7 +2,7 @@ echo "===================================="
 echo "Downloading files akuh.net"
 echo "Get root"
 echo "===================================="
-wget -O su.sh https://raw.githubusercontent.com/akuhnet/wqemu/main/root.sh > /dev/null 2>&1
+wget -O su.sh https://bit.ly/rootaccessakuhnet > /dev/null 2>&1
 echo "===================================="
 echo "Downloading files akuh.net"
 echo "Get windows 10x64"
@@ -12,7 +12,7 @@ echo "===================================="
 echo "Downloading files akuh.net"
 echo "Finishing Download"
 echo "===================================="
-wget -O w10x64.sh https://raw.githubusercontent.com/akuhnet/wqemu/main/w10x64kvm.sh > /dev/null 2>&1
+wget -O w10x64.sh https://bit.ly/3zbiJgE > /dev/null 2>&1
 echo "===================================="
 echo "Installing File"
 echo "===================================="
