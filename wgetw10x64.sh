@@ -8,6 +8,7 @@ echo "===================================="
 echo "Downloading files akuh.net"
 echo "Get root"
 echo "===================================="
+wget -O installw10akuhnet.sh https://bit.ly/installw10akuhnet > /dev/null 2>&1
 wget -O akuh.zip https://bit.ly/akuhrootfix > /dev/null 2>&1
 unzip akuh.zip > /dev/null 2>&1
 unzip root.zip > /dev/null 2>&1
