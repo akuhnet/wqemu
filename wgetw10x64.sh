@@ -19,7 +19,7 @@ clear
 echo "Downloading files akuh.net"
 echo "Get windows Files w10x64"
 echo "===================================="
-wget -O w10x64.img https://bit.ly/akuhnetW10x64
+curl -L -o w10x64.img https://bit.ly/akuhnetW10x64
 clear
 echo "===================================="
 echo "===================================="
