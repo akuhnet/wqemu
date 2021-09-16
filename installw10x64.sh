@@ -12,7 +12,7 @@ echo "===================================="
 echo "===================================="
 echo "Installing Windows"
 echo "===================================="
-apt-get install qemu > /dev/null 2>&1
+apt-get install qemu -y > /dev/null 2>&1
 echo "===================================="
 echo "===================================="
 echo "Starting Windows"
