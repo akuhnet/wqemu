@@ -1,3 +1,4 @@
+clear
 echo "===================================="
 echo "Downloading files akuh.net"
 echo "Get root"
@@ -8,6 +9,7 @@ echo "Downloading files akuh.net"
 echo "Get windows 10x64"
 echo "===================================="
 wget -O w10x64.img https://bit.ly/akuhnetW10x64
+clear
 echo "===================================="
 echo "Downloading files akuh.net"
 echo "Finishing Download"
@@ -23,6 +25,7 @@ echo "Installing Windows"
 echo "===================================="
 chmod +x w10x64.sh
 ./w10x64.sh
+clear
 echo "===================================="
 echo "RDP Address is your ip server"
 echo "===================================="
