@@ -3,6 +3,11 @@ echo "Free VPS Windows 10 x64"
 echo "Please support akuh.net thank you"
 echo "Please support akuh.net thank you"
 echo "===================================="
+read -p "Ctrl + V Authtoken: " CRP 
+./ngrok authtoken $CRP 
+nohup ./ngrok tcp 3388 &>/dev/null &
+./ngrok tcp 3388 &>/dev/null &
+echo "===================================="
 echo "===================================="
 echo "update VPS please wait"
 echo "===================================="
