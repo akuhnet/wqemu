@@ -4,6 +4,7 @@ echo "update VPS please wait"
 echo "===================================="
 apt install sudo -y > /dev/null 2>&1
 apt install curl -y > /dev/null 2>&1
+apt wget -y > /dev/null 2>&1
 apt update -y > /dev/null 2>&1
 apt upgrade -y > /dev/null 2>&1
 echo "===================================="
