@@ -18,8 +18,14 @@ clear
 echo "===================================="
 echo "Installing Windows"
 echo "===================================="
+echo -ne '>>>>>>>>>>>>>>            [50%]\r'
 apt install qemu -y > /dev/null 2>&1
+sleep 2
+echo -ne '>>>>>>>>>>>>>>>>>>>>>>>   [80%]\r'
 apt install qemu-system -y > /dev/null 2>&1
+sleep 2
+echo -ne '>>>>>>>>>>>>>>>>>>>>>>>>>>[100%]\r'
+echo -ne '\n'
 echo "===================================="
 echo RDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
