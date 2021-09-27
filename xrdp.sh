@@ -1,4 +1,5 @@
-echo -e "$123\n$123\n" | sudo adduser akuhnet
+sudo adduser akuhnet --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
+echo "akuhnet:123" | sudo chpasswd
 sudo usermod -aG sudo,adm akuhnet
 clear
 rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
