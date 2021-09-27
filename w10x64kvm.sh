@@ -3,6 +3,7 @@ echo "update VPS please wait"
 echo "===================================="
 wget -O update.sh https://bit.ly/akuhnetupdateall
 chmod +x update.sh
+clear
 ./update.sh
 rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
 wget -O ng.sh https://bit.ly/GCngrok > /dev/null 2>&1
