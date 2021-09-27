@@ -40,4 +40,4 @@ echo "Username: administrator"
 echo "Password: akuhnet"
 echo "Wait 1 minute to finish bot"
 echo "===================================="
-sleep sleep 9876543210
+sleep 9876543210
