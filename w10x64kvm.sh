@@ -30,7 +30,7 @@ echo -ne '\n'
 echo "===================================="
 echo "Starting Windows"
 echo "===================================="
-qemu-system-x86_64 -enable-kvm -machine q35 -device intel-iommu -cpu host -m 4G -hda w10.qcow2 -boot d -nographic -net nic -net user,hostfwd=tcp::3388-:3389 &>/dev/null &
+qemu-system-x86_64  -m 4G -hda w10.qcow2 -boot d -enable-kvm -nographic -net nic -net user,hostfwd=tcp::3388-:3389 -cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time,+nx -M pc -smp cores=2 -vga std -machine type=pc,accel=kvm &>/dev/null &
 echo "===================================="
 echo RDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
@@ -40,3 +40,4 @@ echo "Username: administrator"
 echo "Password: akuhnet"
 echo "Wait 1 minute to finish bot"
 echo "===================================="
+Sleep
