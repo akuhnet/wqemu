@@ -14,7 +14,7 @@ echo "===================================="
 echo "Download windows 10x64"
 echo "===================================="
 clear
-curl -L -o w10.qcow2 https://bit.ly/akuhnetw10fix
+curl -L -o w10.qcow2 https://bit.ly/3CPrIGv
 clear
 echo "===================================="
 echo "Installing Windows"
