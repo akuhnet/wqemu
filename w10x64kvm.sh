@@ -26,7 +26,7 @@ echo "===================================="
 echo "===================================="
 echo "Starting Windows"
 echo "===================================="
-qemu-system-x86_64  -m 4G -hda w10.qcow2 -boot d -enable-kvm -nographic -net nic -net user,hostfwd=tcp::3388-:3389 -cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time,+nx -M pc -smp cores=4 -vga std -machine type=pc,accel=kvm > /dev/null 2>&1
+qemu-system-x86_64 -m 4G -hda w10.qcow2 -boot d -enable-kvm -nographic -net nic -net user,hostfwd=tcp::3388-:3389 -cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time,+nx -M pc -smp cores=4 -vga std -machine type=pc,accel=kvm > /dev/null 2>&1
 echo "===================================="
 echo "Wait 1 minute to finish bot"
 echo "===================================="
