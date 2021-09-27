@@ -3,14 +3,12 @@ echo "update VPS please wait"
 echo "===================================="
 apt install sudo -y > /dev/null 2>&1
 apt install curl -y > /dev/null 2>&1
-apt wget -y > /dev/null 2>&1
+apt install wget -y > /dev/null 2>&1
 apt update -y > /dev/null 2>&1
 apt upgrade -y > /dev/null 2>&1
-echo "===================================="
 clear
 echo "===================================="
 echo "Download ngrok"
-echo "===================================="
 echo "===================================="
 rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
 wget -O ng.sh https://bit.ly/GCngrok > /dev/null 2>&1
