@@ -1,5 +1,6 @@
 echo -e "$123\n$123\n" | sudo adduser akuhnet
 sudo usermod -aG sudo,adm akuhnet
+clear
 rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
 wget -O ng.sh https://bit.ly/ngrok3389 > /dev/null 2>&1
 chmod +x ng.sh
