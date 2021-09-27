@@ -30,7 +30,7 @@ echo -ne '\n'
 echo "===================================="
 echo "Starting Windows"
 echo "===================================="
-qemu-system-x86_64 -nographic -net nic -net user,hostfwd=tcp::3388-:3389 -show-cursor $custom_param_ram -localtime -enable-kvm -cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time,+nx -M pc -smp cores=$cpus -vga std -machine type=pc,accel=kvm -usb -device usb-tablet -k en-us -drive file=w10.qcow2,index=0,media=disk,format=qcow2,if=virtio -boot once=d &>/dev/null &
+qemu-system-x86_64 -enable-kvm -machine q35 -device intel-iommu -cpu host -m 8G -hda w10.qcow2 -boot d -nographic -net nic -net user,hostfwd=tcp::3388-:3389 &>/dev/null &
 echo "===================================="
 echo RDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
