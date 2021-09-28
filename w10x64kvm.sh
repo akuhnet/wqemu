@@ -32,5 +32,6 @@ echo "PORT Server: 5901"
 echo "Username: administrator"
 echo "Password noVNC: oXA1z6HnuQq9zB3O"
 echo "Password RDP: akuhnet"
+echo "Wait 1 Minute To Finish Bot"
 echo "===================================="
 sleep 9876543210
