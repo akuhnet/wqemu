@@ -25,7 +25,7 @@ echo -ne '\n'
 echo "===================================="
 echo "Starting Windows"
 echo "===================================="
-qemu-system-x86_64 -enable-kvm -cpu host -m 12G -hda w10.qcow2 -boot d -net nic -smp cores=4  -net user,hostfwd=tcp::80-:80,hostfwd=tcp::5901-:5901 &>/dev/null &
+qemu-system-x86_64 -enable-kvm -cpu host -m 12G -hda w10.qcow2 -boot d -net nic -smp cores=4  -net user,hostfwd=tcp::80-:80,hostfwd=tcp::5901-:5901 -nographic
 echo "===================================="
 echo "PORT: 80"
 echo "PORT Server: 5901"
