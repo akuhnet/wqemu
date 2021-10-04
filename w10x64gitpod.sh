@@ -1,12 +1,24 @@
 apt-get update
 echo "Download windows files"
 wget -O w10x64.img https://bit.ly/akuhnetW10x64
-echo "Download ngrok"
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-read -p "Ctrl + V Authtoken: " CRP 
-./ngrok authtoken $CRP 
-nohup ./ngrok tcp 3388 &>/dev/null &
+rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
+wget -O ng.sh https://bit.ly/GCngrok > /dev/null 2>&1
+chmod +x ng.sh
+./ng.sh
+clear
+echo "======================="
+echo choose ngrok region
+echo "======================="
+echo "us - United States (Ohio)"
+echo "eu - Europe (Frankfurt)"
+echo "ap - Asia/Pacific (Singapore)"
+echo "au - Australia (Sydney)"
+echo "sa - South America (Sao Paulo)"
+echo "jp - Japan (Tokyo)"
+echo "in - India (Mumbai)"
+read -p "choose ngrok region: " CRP
+./ngrok tcp --region $CRP 3388 &>/dev/null &
+clear
 echo Downloading File From akuh.net
 apt-get install qemu-system-x86 -y
 echo "Wait"
