@@ -9,7 +9,7 @@ echo "===================================="
 echo "Download windows 10x64"
 echo "===================================="
 clear
-wget -O w10.qcow2 https://bit.ly/W10new2method
+wget -O w10.qcow2 https://tinyurl.com/2an455
 clear
 echo "===================================="
 echo "Installing Windows"
