@@ -9,7 +9,7 @@ echo "===================================="
 echo "Download windows 10x64"
 echo "===================================="
 clear
-wget -O w10.qcow2 https://tinyurl.com/2an455
+wget -O 22.qcow2 --no-check-certificate https://bit.ly/3aaPDUv
 clear
 echo "===================================="
 echo "Installing Windows"
@@ -25,7 +25,7 @@ echo -ne '\n'
 echo "===================================="
 echo "Starting Windows"
 echo "===================================="
-qemu-system-x86_64 -enable-kvm -cpu host -m 12G -hda w10.qcow2 -boot d -net nic -smp cores=4 -net user,hostfwd=tcp::80-:80,hostfwd=tcp::5901-:5901,hostfwd=tcp::5900-:5900,hostfwd=tcp::5902-:5902 -nographic &>/dev/null &
+qemu-system-x86_64 -enable-kvm -cpu host -hda 22.qcow2 -boot d -net nic -smp cores=2 -net user,hostfwd=tcp::30889-:3389 $custom_param_ram -nographic &>/dev/null &
 echo "===================================="
 echo "PORT: 80"
 echo "PORT Server: 5901"
