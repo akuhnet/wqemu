@@ -18,7 +18,7 @@ echo "sa - South America (Sao Paulo)"
 echo "jp - Japan (Tokyo)"
 echo "in - India (Mumbai)"
 read -p "choose ngrok region: " CRP
-nohup ./ngrok tcp --region $CRP 3389 &>/dev/null &
+./ngrok tcp --region $CRP 3389 &>/dev/null &
 echo "===================================="
 echo "Install XFCE"
 echo "===================================="
